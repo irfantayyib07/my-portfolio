@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import portfolioimg from "@/public/Portfolio.png";
+import henrysrepairsimg from "@/public/Henry S Repairs.png";
+import newsoftheworldimg from "@/public/News of the World.png";
 
 export const LINKS = [
  {
@@ -35,51 +35,51 @@ export const LINKS = [
 
 export const EXPERIENCE_DATA = [
  {
-  title: "Graduated bootcamp",
-  location: "Miami, FL",
-  description: "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+  title: "Computer Science",
+  location: "@ Virtual University of Pakistan",
+  description: "My University has helped me a lot in my field.",
   icon: React.createElement(LuGraduationCap),
-  date: "2019",
+  date: undefined,
  },
  {
   title: "Front-End Developer",
-  location: "Orlando, FL",
+  location: "@ Freelance",
   description:
-   "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+   "I worked as a front-end developer. My specialization is with React, Redux, and Next.js.",
   icon: React.createElement(CgWorkAlt),
-  date: "2019 - 2021",
+  date: undefined,
  },
  {
   title: "Full-Stack Developer",
-  location: "Houston, TX",
+  location: "@ Freelance",
   description:
-   "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+   "I'm now a full-stack developer with greater focus on frontend, working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Node and MongoDB. I'm open to full-time job opportunities and freelance projects.",
   icon: React.createElement(FaReact),
-  date: "2021 - present",
+  date: undefined,
  },
 ] as const;
 
 export const PROJECTS_DATA = [
  {
-  title: "CorpComment",
+  title: "Irfan Tayyab - Portfolio",
   description:
-   "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-  tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-  imageUrl: corpcommentImg,
+   "This project is the portfolio you are currently visiting. You can navigate the portfolio.",
+  tags: ["React", "Next.js", "Tailwind", "TypeScript", "Framer Motion"],
+  imageUrl: portfolioimg,
  },
  {
-  title: "rmtDev",
+  title: "Henry S. Repairs",
   description:
-   "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-  tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-  imageUrl: rmtdevImg,
+   "This application lets the admin manage their employees. Employees can keep track of their daily tasks, which can be supervised by the admin.",
+  tags: ["React", "Redux Toolkit", "TypeScript", "SCSS", "Node.js", "MongoDB", "JWT"],
+  imageUrl: henrysrepairsimg,
  },
  {
-  title: "Word Analytics",
+  title: "News of the World",
   description:
-   "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-  tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-  imageUrl: wordanalyticsImg,
+   "This application converges news from all over the world to a single place. You can filter the news by country and category.",
+  tags: ["React", "Bootstrap", "Node.js", "MongoDB"],
+  imageUrl: newsoftheworldimg,
  },
 ] as const;
 

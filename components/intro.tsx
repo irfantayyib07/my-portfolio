@@ -31,7 +31,7 @@ export default function Intro() {
       }}
      >
       <Image
-       src="/UPWORK.jpg"
+       src="/Irfan_Tayyab.jpg"
        alt="Irfan Tayyab"
        width="192"
        height="192"
@@ -58,7 +58,7 @@ export default function Intro() {
    </div>
 
    <motion.h1
-    className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-2xl max-w-[60ch]"
+    className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] max-w-[60ch]"
     initial={{ opacity: 0, y: 100 }}
     animate={{ opacity: 1, y: 0 }}
    >
