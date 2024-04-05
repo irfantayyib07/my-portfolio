@@ -9,11 +9,11 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { EXPERIENCE_DATA } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
-import { useTheme } from "@/context/theme-context";
+import { useTheme } from "next-themes";
 
 export default function Experience() {
  const { ref } = useSectionInView("Experience");
- const { theme } = useTheme();
+ const { resolvedTheme } = useTheme();
 
  return (
   <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
@@ -22,10 +22,10 @@ export default function Experience() {
     {EXPERIENCE_DATA.map((item, index) => (
      <React.Fragment key={index}>
       <VerticalTimelineElement
-      visible={true}
+       visible={true}
        contentStyle={{
         background:
-         theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
+         resolvedTheme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
         boxShadow: "none",
         border: "1px solid rgba(0, 0, 0, 0.05)",
         textAlign: "left",
@@ -33,7 +33,7 @@ export default function Experience() {
        }}
        contentArrowStyle={{
         borderRight:
-         theme === "light"
+         resolvedTheme === "light"
           ? "0.4rem solid #9ca3af"
           : "0.4rem solid rgba(255, 255, 255, 0.5)",
        }}
@@ -41,7 +41,7 @@ export default function Experience() {
        icon={item.icon}
        iconStyle={{
         background:
-         theme === "light" ? "white" : "rgba(17, 24, 39, 1)",
+         resolvedTheme === "light" ? "white" : "rgba(17, 24, 39, 1)",
         fontSize: "1.5rem",
        }}
       >
