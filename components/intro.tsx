@@ -11,7 +11,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
- const { ref } = useSectionInView("Home", 0.5);
+ const { ref } = useSectionInView("Home");
  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
  return (
@@ -62,7 +62,7 @@ export default function Intro() {
     initial={{ opacity: 0, y: 100 }}
     animate={{ opacity: 1, y: 0 }}
    >
-    <span className="font-bold">Hello, I'm Irfan.</span> I'm a{" "}
+    <span className="font-bold">Hello, I&apos;m Irfan.</span> I&apos;m a proud{" "}
     <span className="font-bold">frontend developer</span> with{" "}
     <span className="font-bold">1 year</span> of experience. I enjoy
     building <span className="italic">sites & apps</span>. I specialise in{" "}
@@ -80,9 +80,11 @@ export default function Intro() {
     <Link
      href="#contact"
      className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:bg-gray-950 transition"
-     onClick={() => {
+     onClick={(e) => {
+      e.preventDefault();
       setActiveSection("Contact");
       setTimeOfLastClick(Date.now());
+      document.querySelector("#contact")?.scrollIntoView();
      }}
     >
      Contact me here{" "}
@@ -91,7 +93,7 @@ export default function Intro() {
 
     <a
      className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none transition cursor-pointer borderBlack dark:bg-white/10"
-     href="/CV.pdf"
+     href="/Irfan_Tayyab_ReactJS.pdf"
      download
     >
      Download CV{" "}

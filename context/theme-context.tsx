@@ -21,6 +21,7 @@ export default function ThemeContextProvider({
  const [theme, setTheme] = useState<Theme>("light");
 
  const toggleTheme = () => {
+  if (typeof window === "undefined") return;
   if (theme === "light") {
    setTheme("dark");
    window.localStorage.setItem("theme", "dark");
@@ -33,6 +34,7 @@ export default function ThemeContextProvider({
  };
 
  useEffect(() => {
+  if (typeof window === "undefined") return;
   const localTheme = window.localStorage.getItem("theme") as Theme | null;
 
   if (localTheme) {

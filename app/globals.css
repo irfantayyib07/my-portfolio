@@ -13,7 +13,3 @@ html.dark {
 .borderBlack {
  @apply border border-black/10;
 }
-
-section {
- outline: 1px solid red;
-}

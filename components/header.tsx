@@ -6,9 +6,11 @@ import { LINKS } from "@/lib/data";
 import Link from "next/link";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { useRouter } from "next/navigation";
 
 function Header({ }) {
  const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+ const router = useRouter();
  
  return (
   <>
@@ -34,9 +36,11 @@ function Header({ }) {
          }
         )}
         href={link.hash}
-        onClick={() => {
+        onClick={(e) => {
+         e.preventDefault();
          setActiveSection(link.name);
          setTimeOfLastClick(Date.now());
+         document.querySelector(link.hash)?.scrollIntoView();
         }}
        >
         {link.name}
