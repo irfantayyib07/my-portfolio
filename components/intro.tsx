@@ -93,7 +93,7 @@ export default function Intro() {
 
     <a
      className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none transition cursor-pointer borderBlack dark:bg-white/10"
-     href="/Irfan_Tayyab_ReactJS.pdf"
+     href="/Irfan_Tayyab_JS_Dev.pdf"
      download
     >
      Download CV{" "}
