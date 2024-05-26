@@ -6,6 +6,7 @@ import portfolioimg from "@/public/Portfolio.png";
 import henrysrepairsimg from "@/public/Henry S Repairs.png";
 import newsoftheworldimg from "@/public/News of the World.png";
 import responsivewebpages from "@/public/Responsive Webpages.png";
+import tailwindfilterformimg from "@/public/Tailwind Filter Form.png";
 
 export const LINKS = [
  {
@@ -68,6 +69,14 @@ export const PROJECTS_DATA = [
   tags: ["React", "Next.js", "Tailwind", "TypeScript", "Framer Motion"],
   imageUrl: portfolioimg,
   liveUrl: undefined,
+ },
+ {
+  title: "Tailwind Filter Form",
+  description:
+   "This is a filter form made in Vanilla JS. The features include range selection, custom radio-buttons, custom select component, and custom checkboxes and more.",
+  tags: ["HTML", "CSS", "JavaScript", "TailwindCSS", "DOM Manipulation", "UI Development"],
+  imageUrl: tailwindfilterformimg,
+  liveUrl: "https://tailwind-filter-form.vercel.app"
  },
  {
   title: "Henry S. Repairs",
