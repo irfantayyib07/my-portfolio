@@ -116,6 +116,8 @@ export const SKILLS_DATA = [
  "Node.js",
  "Express",
  "MongoDB",
+ "MySQL/PostgreSQL",
+ "Prisma",
  "Framer Motion",
  "Socket.io",
  "GraphQL/Apollo",
