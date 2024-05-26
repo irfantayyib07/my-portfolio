@@ -74,7 +74,7 @@ export const PROJECTS_DATA = [
   title: "Tailwind Filter Form",
   description:
    "This is a filter form made in Vanilla JS. The features include range selection, custom radio-buttons, custom select component, and custom checkboxes and more.",
-  tags: ["HTML", "CSS", "JavaScript", "TailwindCSS", "DOM Manipulation", "UI Development"],
+  tags: ["HTML", "JavaScript", "TailwindCSS", "DOM Manipulation", "UI Development"],
   imageUrl: tailwindfilterformimg,
   liveUrl: "https://tailwind-filter-form.vercel.app"
  },
@@ -107,15 +107,17 @@ export const PROJECTS_DATA = [
 export const SKILLS_DATA = [
  "HTML",
  "CSS",
+ "Tailwind",
  "JavaScript",
  "TypeScript",
  "React",
  "Next.js",
- "Node.js",
- "Git",
- "Tailwind",
- "MongoDB",
  "Redux Toolkit",
+ "Node.js",
  "Express",
+ "MongoDB",
  "Framer Motion",
+ "Socket.io",
+ "GraphQL/Apollo",
+ "Git",
 ] as const;
