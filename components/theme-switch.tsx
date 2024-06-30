@@ -14,7 +14,7 @@ export default function ThemeSwitch() {
     resolvedTheme === "light" ? setTheme("dark") : setTheme("light");
    }}
   >
-   {resolvedTheme === "light" ? <BsSun /> : <BsMoon />}
+   {resolvedTheme === "light" ? <BsMoon /> : <BsSun />}
   </button>
  );
 }

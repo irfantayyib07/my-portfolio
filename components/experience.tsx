@@ -14,18 +14,18 @@ import { useTheme } from "next-themes";
 export default function Experience() {
  const { ref } = useSectionInView("Experience");
  const { resolvedTheme } = useTheme();
-
+ console.log(resolvedTheme);
  return (
   <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
    <SectionHeading>My experience</SectionHeading>
-   {resolvedTheme && <VerticalTimeline lineColor="">
+   <VerticalTimeline lineColor="">
     {EXPERIENCE_DATA.map((item, index) => (
      <React.Fragment key={index}>
       <VerticalTimelineElement
        visible={true}
        contentStyle={{
         background:
-         resolvedTheme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
+         resolvedTheme === "light" ? "rgb(242, 243, 246)" : "rgba(255, 255, 255, 0.05)",
         boxShadow: "none",
         border: "1px solid rgba(0, 0, 0, 0.05)",
         textAlign: "left",
@@ -34,14 +34,14 @@ export default function Experience() {
        contentArrowStyle={{
         borderRight:
          resolvedTheme === "light"
-          ? "0.4rem solid #9ca3af"
+          ? "0.4rem solid rgb(156, 163, 175)"
           : "0.4rem solid rgba(255, 255, 255, 0.5)",
        }}
        date={item.date}
        icon={item.icon}
        iconStyle={{
         background:
-         resolvedTheme === "light" ? "white" : "rgba(17, 24, 39, 1)",
+         (localStorage.getItem("theme") || resolvedTheme) === "light" ? "rgb(255, 255, 255)" : "rgb(17, 24, 39)",
         fontSize: "1.5rem",
        }}
       >
@@ -53,7 +53,7 @@ export default function Experience() {
       </VerticalTimelineElement>
      </React.Fragment>
     ))}
-   </VerticalTimeline>}
+   </VerticalTimeline>
   </section>
  );
 }
