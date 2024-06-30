@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import SectionHeading from "./section-heading";
 import {
  VerticalTimeline,
@@ -10,11 +10,17 @@ import "react-vertical-timeline-component/style.min.css";
 import { EXPERIENCE_DATA } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "next-themes";
+import classNames from "classnames";
 
 export default function Experience() {
  const { ref } = useSectionInView("Experience");
  const { resolvedTheme } = useTheme();
- console.log(resolvedTheme);
+ const [resolvedThemeAfterRender, setResolvedThemeAfterRender] = useState<string>();
+
+ useEffect(() => {
+  setResolvedThemeAfterRender(resolvedTheme);
+ }, [resolvedTheme])
+
  return (
   <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
    <SectionHeading>My experience</SectionHeading>
@@ -39,9 +45,11 @@ export default function Experience() {
        }}
        date={item.date}
        icon={item.icon}
+       iconClassName={classNames({
+        "bg-[#ffffff]": resolvedThemeAfterRender === "light",
+        "bg-[#111827]": resolvedThemeAfterRender === "dark",
+       })}
        iconStyle={{
-        background:
-         (localStorage.getItem("theme") || resolvedTheme) === "light" ? "rgb(255, 255, 255)" : "rgb(17, 24, 39)",
         fontSize: "1.5rem",
        }}
       >
