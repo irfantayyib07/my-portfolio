@@ -14,7 +14,7 @@ export default function Projects() {
    ref={ref}
    id="projects" className="scroll-mt-28 mb-28">
    <SectionHeading>My projects</SectionHeading>
-   <div className="grid grid-rows-5">
+   <div className="grid" style={{ gridTemplateRows: `repeat(${PROJECTS_DATA.length}, minmax(0, 1fr))` }}>
     {PROJECTS_DATA.map((project, index) => (
      <React.Fragment key={index}>
       <Project {...project} />
