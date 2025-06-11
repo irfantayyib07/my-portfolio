@@ -93,8 +93,8 @@ export default function Intro() {
 
     <a
      className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none transition cursor-pointer borderBlack dark:bg-white/10"
-     href="/Irfan_Tayyab_JS_Dev.pdf"
-     download
+     href="https://drive.google.com/uc?export=download&id=11DFWdXnvsUQJlluxBtMNMr5gwJC8mJFJ"
+     download="Irfan_Tayyab_JS_Dev"
     >
      Download CV{" "}
      <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
@@ -102,7 +102,7 @@ export default function Intro() {
 
     <a
      className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.05] hover:scale-[1.05] active:scale-1.05 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-     href="https://linkedin.com/in/irfan-tayyab-241131300/"
+     href="https://www.linkedin.com/in/irfan-tayyab-31b52330b/"
      target="_blank"
     >
      <BsLinkedin />
