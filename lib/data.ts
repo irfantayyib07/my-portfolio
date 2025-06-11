@@ -92,7 +92,7 @@ export const PROJECTS_DATA = [
    "This application converges news from all over the world to a single place. You can filter the news by country and category.",
   tags: ["React", "Bootstrap", "Node.js", "MongoDB"],
   imageUrl: newsoftheworldimg,
-  liveUrl: "https://newsoftheworld.vercel.app"
+  liveUrl: "https://news-of-the-world-fe.vercel.app"
  },
  {
   title: "Responsive Webpages",
