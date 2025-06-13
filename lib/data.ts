@@ -35,38 +35,11 @@ export const LINKS = [
  },
 ] as const;
 
-export const EXPERIENCE_DATA = [
- {
-  title: "Computer Science",
-  location: "@ Virtual University of Pakistan",
-  description: "My University has helped me a lot in my field.",
-  icon: React.createElement(LuGraduationCap),
-  date: undefined,
- },
- {
-  title: "Front-End Developer",
-  location: "@ Freelance",
-  description:
-   "I worked as a front-end developer. My specialization is with React, Redux, and Next.js.",
-  icon: React.createElement(CgWorkAlt),
-  date: undefined,
- },
- {
-  title: "Full-Stack Developer",
-  location: "@ Freelance",
-  description:
-   "I'm now a full-stack developer with greater focus on frontend, working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Node and MongoDB. I'm open to full-time job opportunities and freelance projects.",
-  icon: React.createElement(FaReact),
-  date: undefined,
- },
-] as const;
-
 export const PROJECTS_DATA = [
  {
   title: "Irfan Tayyab - Portfolio",
-  description:
-   "This project is the portfolio you are currently visiting. You can navigate the portfolio.",
-  tags: ["React", "Next.js", "Tailwind", "TypeScript", "Framer Motion"],
+  description: "The project is the portfolio you are currently visiting.",
+  tags: ["React", "Next.js", "Tailwind", "TypeScript", "Framer Motion", "Intersection Observer"],
   imageUrl: portfolioimg,
   liveUrl: undefined,
  },
@@ -76,7 +49,7 @@ export const PROJECTS_DATA = [
    "This is a filter form made in Vanilla JS. The features include range selection, custom radio-buttons, custom select component, and custom checkboxes and more.",
   tags: ["HTML", "JavaScript", "TailwindCSS", "DOM Manipulation", "UI Development"],
   imageUrl: tailwindfilterformimg,
-  liveUrl: "https://tailwind-filter-form.vercel.app"
+  liveUrl: "https://tailwind-filter-form.vercel.app",
  },
  // {
  //  title: "Henry S. Repairs",
@@ -92,15 +65,14 @@ export const PROJECTS_DATA = [
    "This application converges news from all over the world to a single place. You can filter the news by country and category.",
   tags: ["React", "Bootstrap", "Node.js", "MongoDB"],
   imageUrl: newsoftheworldimg,
-  liveUrl: "https://news-of-the-world-fe.vercel.app"
+  liveUrl: "https://news-of-the-world-fe.vercel.app",
  },
  {
   title: "Responsive Webpages",
-  description:
-   "HTML and CSS only, responsive, cross-browser compatible web pages.",
+  description: "HTML and CSS only, responsive, cross-browser compatible web pages.",
   tags: ["HTML", "CSS", "PSD to HTML", "Cross-browser Compatibility"],
   imageUrl: responsivewebpages,
-  liveUrl: "https://responsive-webpages-it.firebaseapp.com"
+  liveUrl: "https://responsive-webpages-it.firebaseapp.com",
  },
 ] as const;
 
@@ -116,10 +88,42 @@ export const SKILLS_DATA = [
  "Node.js",
  "Express",
  "MongoDB",
- "MySQL/PostgreSQL",
+ "Redis",
+ "SQL",
+ "Firebase",
+ "Supabase",
  "Prisma",
  "Framer Motion",
  "Socket.io",
  "GraphQL/Apollo",
  "Git",
+ "API Integration",
+ "AI Integration",
+] as const;
+
+export const EXPERIENCE_DATA = [
+ {
+  title: "Bachelor's in Computer Science",
+  location: "@ Virtual University of Pakistan",
+  description:
+   "My university gave me a strong foundation in web development and taught me how to think like a programmer.",
+  icon: React.createElement(LuGraduationCap),
+  date: undefined,
+ },
+ {
+  title: "MERN Stack Developer",
+  location: "@ CodeFlamme Pvt Ltd.",
+  description:
+   "At the company, I had the responsibility of developing and maintaining full-stack web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js). I built responsive user interfaces, designed RESTful APIs, and handled backend logic and database integration. I collaborated closely with UI/UX designers and other developers to deliver scalable, secure, and high-performing solutions, ensuring smooth data flow between the frontend and backend.",
+  icon: React.createElement(CgWorkAlt),
+  date: undefined,
+ },
+ {
+  title: "Lead Full-Stack Developer (MERN)",
+  location: "@ Sprouto Group",
+  description:
+   "At the company, I had the responsibility of leading the development of full-stack applications using the MERN stack. I guided a team of developers, reviewed code for quality and consistency, and oversaw project architecture and deployment. Alongside hands-on coding, I coordinated cross-functional efforts, ensured timely delivery of features, and made key technical decisions to maintain performance, scalability, and security across the stack.",
+  icon: React.createElement(FaReact),
+  date: undefined,
+ },
 ] as const;

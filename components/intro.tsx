@@ -15,11 +15,7 @@ export default function Intro() {
  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
  return (
-  <section
-   ref={ref}
-   id="home"
-   className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
-  >
+  <section ref={ref} id="home" className="mb-28 max-w-[50rem] scroll-mt-[100rem] text-center sm:mb-0">
    <div className="flex items-center justify-center">
     <div className="relative">
      <motion.div
@@ -37,12 +33,12 @@ export default function Intro() {
        height="192"
        quality="95"
        priority={true}
-       className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+       className="h-24 w-24 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
       />
      </motion.div>
 
      <motion.span
-      className="absolute bottom-0 right-0 text-4xl select-none"
+      className="absolute bottom-0 right-0 select-none text-4xl"
       initial={{ opacity: 0, scale: 0 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{
@@ -58,19 +54,18 @@ export default function Intro() {
    </div>
 
    <motion.h1
-    className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] max-w-[60ch]"
+    className="mb-10 mt-4 max-w-[60ch] px-4 text-2xl font-medium !leading-[1.5]"
     initial={{ opacity: 0, y: 100 }}
     animate={{ opacity: 1, y: 0 }}
    >
     <span className="font-bold">Hello, I&apos;m Irfan.</span> I&apos;m a proud{" "}
-    <span className="font-bold">frontend developer</span> with{" "}
-    <span className="font-bold">1 year</span> of experience. I enjoy
-    building <span className="italic">sites & apps</span>. I specialise in{" "}
-    <span className="underline">React and Next.js</span>.
+    <span className="font-bold">full-stack developer</span> with <span className="font-bold">1 year</span> of
+    experience. I enjoy building <span className="italic">sites & apps</span>. I specialise in{" "}
+    <span className="underline">MERN and Next.js</span>.
    </motion.h1>
 
    <motion.div
-    className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-md font-medium"
+    className="text-md flex flex-col items-center justify-center gap-2 px-4 font-medium sm:flex-row"
     initial={{ opacity: 0, y: 100 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{
@@ -79,7 +74,7 @@ export default function Intro() {
    >
     <Link
      href="#contact"
-     className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:bg-gray-950 transition"
+     className="group flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white outline-none transition hover:bg-gray-950"
      onClick={(e) => {
       e.preventDefault();
       setActiveSection("Contact");
@@ -87,21 +82,19 @@ export default function Intro() {
       document.querySelector("#contact")?.scrollIntoView();
      }}
     >
-     Contact me here{" "}
-     <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+     Contact me here <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />
     </Link>
 
     <a
-     className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none transition cursor-pointer borderBlack dark:bg-white/10"
+     className="borderBlack group flex cursor-pointer items-center gap-2 rounded-full bg-white px-7 py-3 outline-none transition dark:bg-white/10"
      href="https://drive.google.com/uc?export=download&id=11DFWdXnvsUQJlluxBtMNMr5gwJC8mJFJ"
      download="Irfan_Tayyab_JS_Dev"
     >
-     Download CV{" "}
-     <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+     Download CV <HiDownload className="opacity-60 transition group-hover:translate-y-1" />
     </a>
 
     <a
-     className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.05] hover:scale-[1.05] active:scale-1.05 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+     className="active:scale-1.05 borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-gray-700 transition hover:scale-[1.05] hover:text-gray-950 focus:scale-[1.05] dark:bg-white/10 dark:text-white/60"
      href="https://www.linkedin.com/in/irfan-tayyab-31b52330b/"
      target="_blank"
     >
@@ -109,7 +102,7 @@ export default function Intro() {
     </a>
 
     <a
-     className="bg-white p-4 text-gray-700 max-w-12 max-h-12 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.05] hover:scale-[1.05] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+     className="borderBlack flex max-h-12 max-w-12 cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-[1.35rem] text-gray-700 transition hover:scale-[1.05] hover:text-gray-950 focus:scale-[1.05] active:scale-105 dark:bg-white/10 dark:text-white/60"
      href="https://github.com/irfantayyib07/"
      target="_blank"
     >
