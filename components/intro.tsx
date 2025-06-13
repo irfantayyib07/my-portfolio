@@ -59,8 +59,9 @@ export default function Intro() {
     animate={{ opacity: 1, y: 0 }}
    >
     <span className="font-bold">Hello, I&apos;m Irfan.</span> I&apos;m a proud{" "}
-    <span className="font-bold">full-stack developer</span> with <span className="font-bold">1 year</span> of
-    experience. I enjoy building <span className="italic">sites & apps</span>. I specialise in{" "}
+    <span className="font-bold">full-stack developer</span> with{" "}
+    <span className="font-bold">one and a half years</span> of experience. I enjoy building{" "}
+    <span className="italic">sites & apps</span>. I specialise in{" "}
     <span className="underline">MERN and Next.js</span>.
    </motion.h1>
 
