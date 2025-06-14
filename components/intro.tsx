@@ -88,8 +88,7 @@ export default function Intro() {
 
     <a
      className="borderBlack group flex cursor-pointer items-center gap-2 rounded-full bg-white px-7 py-3 outline-none transition dark:bg-white/10"
-     href="https://drive.google.com/uc?export=download&id=11DFWdXnvsUQJlluxBtMNMr5gwJC8mJFJ"
-     download="Irfan_Tayyab_JS_Dev"
+     href="https://drive.google.com/file/d/11DFWdXnvsUQJlluxBtMNMr5gwJC8mJFJ/view"
     >
      Download CV <HiDownload className="opacity-60 transition group-hover:translate-y-1" />
     </a>
